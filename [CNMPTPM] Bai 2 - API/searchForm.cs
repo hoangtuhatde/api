@@ -15,6 +15,7 @@ namespace _CNMPTPM__Bai_2___API
     {
         Flickr flickr;
         public PhotoCollection result;
+        public string name;
         public searchForm()
         {
             InitializeComponent();
@@ -30,7 +31,8 @@ namespace _CNMPTPM__Bai_2___API
             {
                 PhotoSearchOptions opt = new PhotoSearchOptions(null, null, FlickrNet.TagMode.AnyTag, str);
                 result = flickr.PhotosSearch(opt);
-                this.Hide();
+                this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                name = str; 
             }
         }
 

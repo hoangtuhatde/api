@@ -62,6 +62,12 @@
     <Compile Include="searchForm.Designer.cs">
       <DependentUpon>searchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="uploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadForm.Designer.cs">
+      <DependentUpon>uploadForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="searchForm.resx">
       <DependentUpon>searchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadForm.resx">
+      <DependentUpon>uploadForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="FlickrNet.chm" />
     <None Include="packages.config" />
