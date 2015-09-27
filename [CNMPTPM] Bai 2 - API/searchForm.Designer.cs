@@ -61,7 +61,6 @@
             this.Name = "searchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "searchForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.searchForm_FormClosed);
             this.Load += new System.EventHandler(this.searchForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

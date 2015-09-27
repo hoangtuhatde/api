@@ -145,6 +145,12 @@ namespace _CNMPTPM__Bai_2___API
         {
             var pb = (PictureBox)sender;
             pb.BorderStyle = BorderStyle.FixedSingle;
+            var p = (Photo)pb.Tag;
+            string tip;
+            var info = flickr.PhotosGetInfo(p.PhotoId);
+            var t = new ToolTip();
+            tip = "Title: " + info.Title + "\n" + "Owner: " + info.OwnerUserName + "\n" + "Description: " + info.Description + "\n" + "Link: " + info.WebUrl + "\n";
+            t.SetToolTip((PictureBox)sender, tip);
         }
         private void photo_unHover(object sender, EventArgs e)
         {
