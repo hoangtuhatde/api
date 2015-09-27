@@ -31,6 +31,7 @@ namespace _CNMPTPM__Bai_2___API
             photoDisplayPanel = new PhotoDisplay();
             this.Controls.Add(photoDisplayPanel);
             photoDisplayPanel.Dock = DockStyle.Fill;
+            listPB = new List<PictureBox>();
             lastestPhotosToolStripMenuItem_Click(null, null);
             //savedFolder = Application.StartupPath + "\\Photos";
             savedFolder = "Photos";
@@ -45,7 +46,7 @@ namespace _CNMPTPM__Bai_2___API
         private void lastestPhotosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Text =  appName + " - Top 100 photos";
-            listPB = new List<PictureBox>();
+            //listPB = new List<PictureBox>();
             var photoList = flickr.InterestingnessGetList();
             showPhoto(photoList);
 
